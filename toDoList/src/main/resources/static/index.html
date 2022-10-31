@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="preloader" id="preloader">
+    <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p class="premium_text">Enter code to have an opportunity to share tasks with others:</p>
+        <input class="premium_input" id="premium_input" type="text">
+        <div class="btn_get_premium" id="btn_get_premium">
+            <p class="btn_get_premium_txt">Get</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="header" id="header">
+    <div class="header__inner" id="header__inner">
+        <div class="logo_text" id="logo_text">
+            <div class="all-the-lists">
+                <div class="lists">
+                    <div class="premium_block" id="premium_block">
+                        <div class="buttons">
+                            <button class="btn-hover color-1" id="premium_btn">Get Premium</button>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="lists_block" id="lists_block">
+                    </div>
+                </div>
+                <div class="add_list" id="add_list">
+                    <div class="add_list_inner" id="add_list_inner">
+                        <img class="add_list_img" id="add_list_img" src="images/plus_white.png" alt="">
+                        <h3 class="add_list_text" id="add_list_text">New List</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="all-the-tasks" id="all-the-tasks">
+                <div class="name_of_list" id="name_of_list">
+                    <h1 class="name_of_list_text" id="name_of_list_text">List Table</h1>
+                </div>
+                <div class="tasks" id="tasks">
+                </div>
+                <div class="add_task" id="add_task">
+                    <img class="add_task_img" id="add_task_img" src="images/plus.png" alt="">
+                    <h3 class="add_task_text" id="add_task_text">Add a Task</h3>
+                </div>
+                <div class="add_task_online" id="add_task_online">
+                    <img class="add_task_img_online" id="add_task_img_online" src="images/plus.png" alt="">
+                    <h3 class="add_task_text_online" id="add_task_text_online">Add a Task</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/modalWindowPremium.js"></script>
+<script src="js/premiumCode.js"></script>
+</body>
+</html>
